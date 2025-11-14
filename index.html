@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>M1les Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            background: #0a0a0f;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+        header {
+            padding: 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #0d0d16;
+            border-bottom: 1px solid #222;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+            color: #8a4fff;
+        }
+        nav a {
+            color: #bbb;
+            margin-left: 20px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .hero {
+            padding: 70px 40px;
+            text-align: center;
+        }
+        .hero h2 {
+            font-size: 40px;
+            color: #8a4fff;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            padding: 40px;
+        }
+        .card {
+            background: #14141d;
+            padding: 15px;
+            border-radius: 12px;
+            transition: 0.2s;
+            border: 1px solid #222;
+        }
+        .card:hover {
+            transform: scale(1.03);
+            border-color: #8a4fff;
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .card h3 {
+            margin-top: 10px;
+            font-size: 20px;
+            color: #8a4fff;
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #666;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>M1les</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h2>Game Developer / 3D Artist / Editor</h2>
+        <p>Welcome to my gaming & development portfolio. Here you can find all my works, showcases, and skills.</p>
+    </section>
+
+    <section id="portfolio">
+        <h2 style="text-align:center; color:#8a4fff;">My Projects</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="scythe_preview.jpg" alt="Scythe 3D Model">
+                <h3>Reaper Scythe</h3>
+                <p>High-poly 3D fantasy scythe modeled in Blender.</p>
+            </div>
+
+            <div class="card">
+                <img src="void_sword_preview.jpg" alt="Stylized Sword">
+                <h3>Voidblade Sword</h3>
+                <p>Stylized hand-painted sword with gradient blade.</p>
+            </div>
+
+            <div class="card">
+                <img src="spiked_dagger_preview.jpg" alt="Spiked Blade">
+                <h3>Spiked Demon Dagger</h3>
+                <p>Low-poly game-ready dagger with metallic spikes.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        © 2025 M1les — Gaming Portfolio
+    </footer>
+</body>
+</html>
